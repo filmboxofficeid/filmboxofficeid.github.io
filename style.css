@@ -2,29 +2,28 @@
 
 :root {
     --font: 'Fira Sans', sans-serif;
-    
+
     --background: #262626;
-    --selection:#262626;
-    --fontColor:#bababa;
-    --white:#ffffff;
+    --selection: #262626;
+    --defColor: #fff;
 }
 
-body{
+body {
     background-color: var(--background);
-    color: var(--white);
+    color: var(--defColor);
 }
 
-footer{
+footer {
     text-align: center;
 
-    color:var(--fontColor);
+    color: var(--defColor);
 
     font-family: var(--font);
     font-size: 14px;
     font-weight: 430;
 }
 
-#userPhoto{
+#userPhoto {
     width: 96px;
     height: 96px;
 
@@ -33,13 +32,13 @@ footer{
     margin: 35px auto 20px;
 
     border-radius: 50%;
-    border: solid var(--white) 4px;
+    border: solid var(--defColor) 4px;
 }
 
-#userName{
+#userName {
     width: 100%;
 
-    color: var(--fontColor);
+    color: var(--defColor);
 
     font-family: var(--font);
     font-size: 25px;
@@ -52,14 +51,14 @@ footer{
     display: block;
 }
 
-.descriptionName{
+.descriptionName {
     font-size: 15px;
     font-weight: 300;
     line-height: 18px;
     display: block;
 }
 
-#links{
+#links {
     max-width: 675px;
     width: auto;
 
@@ -67,50 +66,55 @@ footer{
 
     margin: 27px auto;
 }
-.link{
+
+.link {
     display: block;
     margin-bottom: 22px;
     padding: 17px;
 
     background-color: var(--background);
-    color:var(--fontColor);
+    color: var(--defColor);
 
     font-family: var(--font);
     font-size: 17px;
     font-weight: 500;
 
     border-radius: 15px;
-    border: solid var(--fontColor) 1px;
+    border: solid var(--defColor) 1px;
 
     text-align: center;
-	text-transform:uppercase;
+    text-transform: uppercase;
     text-decoration: none;
-    transition: all .30s cubic-bezier(.08,.59,.29,.99);
+    transition: all .30s cubic-bezier(.08, .59, .29, .99);
 }
-.link img{
+
+.link img {
     display: block;
 
     width: 35px;
     height: 35px;
-    
-    position: absolute;
-    margin: -6.6px auto;
 
-    filter: invert(85%) sepia(7%) saturate(24%) hue-rotate(353deg) brightness(90%) contrast(83%);
+    position: absolute;
+    margin: -7.5px auto;
+
+    filter: invert(100%) sepia(91%) saturate(2639%) hue-rotate(186deg) brightness(125%) contrast(100%);
 }
-.description{
-	font-family: var(--font);
+
+.description {
+    font-family: var(--font);
     font-size: 12px;
     font-weight: 500;
-	text-transform:uppercase;
-	font-weight: 400;
+    text-transform: uppercase;
+    font-weight: 400;
 }
-.link:hover{
-    background-color: var(--fontColor);
+
+.link:hover {
+    background-color: var(--defColor);
     color: #1a1a1a;
-	border-radius: 45px;
+    border-radius: 45px;
     border: solid var(#30ff94) 1px;
 }
-.link:hover img{
+
+.link:hover img {
     filter: invert(13%) sepia(1%) saturate(1134%) hue-rotate(34deg) brightness(98%) contrast(93%);
 }
