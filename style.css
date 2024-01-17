@@ -21,6 +21,7 @@ footer {
     font-family: var(--font);
     font-size: 14px;
     font-weight: 430;
+    margin-bottom: 100px;
 }
 
 #userPhoto {
